@@ -1,0 +1,1 @@
+mods.jei.JEI.hideItem(<item:quark:backpack>);
