@@ -28,7 +28,7 @@ for color in colors {
   ]);
 
   stoneCutter.addRecipe(color + "_terracotta_stairs_stone_cutter_recipe", <item:contenttweaker:${color}_terracotta_stairs>, <item:minecraft:${color}_terracotta>);
-  stoneCutter.addRecipe(color + "_terracotta_slab_stone_cutter_recipe", <item:contenttweaker:${color}_terracotta_slab>, <item:minecraft:${color}_terracotta>);
+  stoneCutter.addRecipe(color + "_terracotta_slab_stone_cutter_recipe", <item:contenttweaker:${color}_terracotta_slab> * 2, <item:minecraft:${color}_terracotta>);
 
   <tag:blocks:minecraft:stairs>.add(<blockstate:contenttweaker:${color}_terracotta_stairs>);
   <tag:blocks:minecraft:slabs>.add(<blockstate:contenttweaker:${color}_terracotta_slab>);

@@ -40,6 +40,15 @@ craftingTable.addShaped("dark_oak_sapling_recipe", <item:minecraft:dark_oak_sapl
   [<item:minecraft:air>, <item:minecraft:oak_sapling>, <item:minecraft:air>]
 ]);
 
+// More paper recipes
+craftingTable.addShaped("paper_from_logs_recipe", <item:minecraft:paper> * 3, [
+  [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>]
+]);
+
+craftingTable.addShaped("paper_from_bamboo", <item:minecraft:paper> * 3, [
+  [<item:minecraft:bamboo>, <item:minecraft:bamboo>, <item:minecraft:bamboo>],
+  [<item:minecraft:air>, <item:minecraft:water_bucket>, <item:minecraft:air>]
+]);
 
 // Block recipes
 craftingTable.addShaped("magma_block_recipe", <item:minecraft:magma_block> * 8, [
@@ -73,13 +82,6 @@ craftingTable.addShaped("chainmail_chestplate_recipe", <item:minecraft:chainmail
   [<item:minecraft:chain>, <item:minecraft:chain>, <item:minecraft:chain>]
 ]);
 
-// Custom Stairs
-craftingTable.addShaped("gold_stairs_recipe", <item:contenttweaker:gold_stairs> * 4, [
-  [<item:minecraft:gold_block>, <item:minecraft:air>, <item:minecraft:air>],
-  [<item:minecraft:gold_block>, <item:minecraft:gold_block>, <item:minecraft:air>],
-  [<item:minecraft:gold_block>, <item:minecraft:gold_block>, <item:minecraft:gold_block>]
-]);
-stoneCutter.addRecipe("gold_stairs_stone_cutter_recipe", <item:contenttweaker:gold_stairs>, <item:minecraft:gold_block>);
 
 craftingTable.removeRecipe(<item:minecraft:golden_apple>);
 craftingTable.removeByName("buildersaddition:reverse_acacia_slab");
@@ -90,3 +92,30 @@ craftingTable.removeByName("buildersaddition:reverse_jungle_slab");
 craftingTable.removeByName("buildersaddition:reverse_oak_slab");
 craftingTable.removeByName("buildersaddition:reverse_spruce_slab");
 craftingTable.removeByName("buildersaddition:reverse_warped_slab");
+
+var colors = [
+    "white",
+    "orange",
+    "magenta",
+    "light_blue",
+    "yellow",
+    "lime",
+    "pink",
+    "gray",
+    "light_gray",
+    "cyan",
+    "purple",
+    "blue",
+    "brown",
+    "green",
+    "red",
+    "black"
+] as string[];
+
+for color in colors {
+  craftingTable.removeByName("comforts:sleeping_bag_"+color);
+  craftingTable.addShaped("sleeping_bag_"+color, <item:comforts:sleeping_bag_${color}>, [
+    [<item:minecraft:${color}_carpet>, <item:minecraft:${color}_carpet>, <item:minecraft:${color}_carpet>],
+    [<item:minecraft:${color}_carpet>, <item:minecraft:${color}_carpet>, <item:minecraft:${color}_carpet>]
+  ]);
+}

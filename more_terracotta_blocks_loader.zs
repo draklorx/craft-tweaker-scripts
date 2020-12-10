@@ -32,7 +32,7 @@ for color in colors {
         .withType<BlockBuilderStairs>()
         .withTopTexture(<resource:minecraft:${color}_terracotta>)
         .withBottomTexture(<resource:minecraft:${color}_terracotta>)
-        .withSidesTexture(ignored => <resource:minecraft:${color}_terracotta>)
+        .withSidesTexture(<resource:minecraft:${color}_terracotta>)
         .build(color+"_terracotta_stairs");
 
     new BlockBuilder(<blockmaterial:rock>)
@@ -42,7 +42,7 @@ for color in colors {
         .withType<BlockBuilderSlab>()
         .withTopTexture(<resource:minecraft:${color}_terracotta>)
         .withBottomTexture(<resource:minecraft:${color}_terracotta>)
-        .withSideTexture(ignored => <resource:minecraft:${color}_terracotta>)
+        .withSideTexture(<resource:minecraft:${color}_terracotta>)
         .build(color+"_terracotta_slab");
 }
 
@@ -53,7 +53,7 @@ new BlockBuilder(<blockmaterial:rock>)
     .withType<BlockBuilderStairs>()
     .withTopTexture(<resource:minecraft:terracotta>)
     .withBottomTexture(<resource:minecraft:terracotta>)
-    .withSidesTexture(ignored => <resource:minecraft:terracotta>)
+    .withSidesTexture(<resource:minecraft:terracotta>)
     .build("terracotta_stairs");
 
 new BlockBuilder(<blockmaterial:rock>)
@@ -63,5 +63,5 @@ new BlockBuilder(<blockmaterial:rock>)
     .withType<BlockBuilderSlab>()
     .withTopTexture(<resource:minecraft:terracotta>)
     .withBottomTexture(<resource:minecraft:terracotta>)
-    .withSideTexture(ignored => <resource:minecraft:terracotta>)
+    .withSideTexture(<resource:minecraft:terracotta>)
     .build("terracotta_slab");
