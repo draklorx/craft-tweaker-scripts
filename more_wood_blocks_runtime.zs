@@ -32,5 +32,12 @@ for woodType, woods in woodTypes {
         <tag:blocks:minecraft:wooden_slab>.add(<blockstate:contenttweaker:${wood}_${woodType}_slab>);
         <tag:items:minecraft:slab>.add(<item:contenttweaker:stripped_${wood}_slab>);
         <tag:items:minecraft:wooden_slab>.add(<item:contenttweaker:${wood}_${woodType}_slab>);
+
+        if woodType == "wood" {
+            <item:contenttweaker:stripped_${wood}_stairs>.burnTime = 300;
+            <item:contenttweaker:${wood}_${woodType}_stairs>.burnTime = 300;
+            <item:contenttweaker:stripped_${wood}_slab>.burnTime = 150;
+            <item:contenttweaker:${wood}_${woodType}_slab>.burnTime = 150;
+        }
     }
 }
