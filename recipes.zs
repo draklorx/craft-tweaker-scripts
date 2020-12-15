@@ -41,6 +41,12 @@ craftingTable.addShaped("dark_oak_sapling_recipe", <item:minecraft:dark_oak_sapl
 ]);
 
 // More paper recipes
+craftingTable.addShaped("red_sand_recipe", <item:minecraft:red_sand> * 8, [
+  [<item:minecraft:sand>, <item:minecraft:sand>, <item:minecraft:sand>],
+  [<item:minecraft:sand>, <item:minecraft:red_dye>, <item:minecraft:sand>],
+  [<item:minecraft:sand>, <item:minecraft:sand>, <item:minecraft:sand>]
+]);
+
 craftingTable.addShaped("paper_from_bamboo", <item:minecraft:paper> * 3, [
   [<item:minecraft:bamboo>, <item:minecraft:bamboo>, <item:minecraft:bamboo>],
   [<item:minecraft:air>, <item:minecraft:water_bucket>, <item:minecraft:air>]
