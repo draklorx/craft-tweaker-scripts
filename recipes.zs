@@ -24,6 +24,7 @@ craftingTable.addShaped("diamond_horse_armor_recipe", <item:minecraft:diamond_ho
 
 // Destructuring recipes
 craftingTable.addShapeless("wool_to_string_recipe", <item:minecraft:string> * 4, [<tag:items:minecraft:wool>]);
+craftingTable.addShapeless("shulker_box_to_shells_recipe", <item:minecraft:shulker_shell> * 2, [<tag:items:pandoras_creatures:vanilla_shulker_boxes>]);
 
 craftingTable.addShaped("name_tag_recipe", <item:minecraft:name_tag>, [
     [<item:minecraft:chain>],
